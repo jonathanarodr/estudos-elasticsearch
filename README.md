@@ -20,7 +20,12 @@ O elasticsearch trabalha utilizando a estrutura `/{indice}/{tipo}/{identificator
 
 * `_id`: utilizado para identificar um documento pelo seu id.
 ```
-/{indice}/{tipo}/_id
+/{indice}/{tipo}/{id}
+```
+
+* `_update`: utilizado para atualizar parcialmente um documento já existente.
+```
+/{indice}/{tipo}/{id}/_update
 ```
 
 * `_search`: utilizado para listar todos os resultados encontrados em um tipo informado.
